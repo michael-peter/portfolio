@@ -2,6 +2,8 @@
 
 Get help creating amazing web apps and a chatbot to manage your clients! Do you have a design already, or you need help with that too? Connect with the best developer in the world!
 
+[View Portfolio](https://michael-peter.github.io)
+
 [Twitter](http://twitter.com/PeterHMichael)
 
 [LinkedIn](http://linkedin.com/in/peterhmichael)
