@@ -1,0 +1,98 @@
+
+.contact-container {
+  bottom: 0;
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+  background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('/src/misc/content-background.jpg') no-repeat;
+  border-radius: 20px;
+
+  & .contact-area {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+
+    p {
+      margin: 0 0 10px;
+      padding: 5px 0;
+      font-weight: bolder;
+      color: black;
+    }
+
+    & .contact-message {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      outline: none;
+      font-family: inherit;
+      font-size: 1.1em;
+      font-weight: 500;
+      resize: none;
+      border-radius: 10px;
+      transition: none;
+
+      &:focus {
+        border: solid 2px black;
+      }
+    }
+  }
+
+  & .contact-options {
+    
+    & button {
+      outline: none;
+      border: none;
+      font-family: inherit;
+      display: inline-block;
+      margin: 20px 10px;
+      padding: 7px;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s;
+
+      &.contact-mail {
+        background: darkred;
+      }
+
+      &.contact-whatsapp {
+        background: green
+        ;
+      }
+
+      &:active {
+        transform: scale(1.1);
+      }
+
+      &:focus {
+        outline: solid 2px black;
+      }
+    }
+
+    & a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
+
+& .connect-graphics img {
+  display: block;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.connect {
+  outline: none;
+  border: none;
+  background: darkred;
+  color: white;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+}

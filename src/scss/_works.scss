@@ -1,0 +1,41 @@
+.works-container {
+  margin: 0 0 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('/src/misc/content-background.jpg') repeat-y;
+
+  & .work-box {
+    margin: 0  0 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+
+    &:hover {
+      background: whitesmoke;
+    }
+
+    &-image {
+      display: block;
+      width: 25%;
+      border-radius: 20px;
+    }
+
+    &-text {
+      width: 74%;
+      font-size: 0.8em;
+
+      & p {
+        margin: 0;
+        padding: 5px;
+
+        &.framework-spec {
+          font-size: 0.7em;
+          color: gray;
+        }
+      }
+    }
+  }
+}
