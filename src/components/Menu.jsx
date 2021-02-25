@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react'
 import picture from '../misc/michael-peter.jpg'
-import { SiGithub, SiLinkedin, SiTwitter, SiFacebook } from 'react-icons/si'
+import { SiGithub, SiLinkedin, SiTwitter, SiInstagram } from 'react-icons/si'
 import { ViewContext } from '../ViewContext'
 
 function Menu() {
@@ -48,7 +48,7 @@ function Menu() {
         <img onClick={() => (zoom === '') ? setZoom('zoom') : setZoom('')} src={picture} alt="" className={`picture ${zoom}`} />
         <div className="bio">
           <p className="name">Michael Peter</p>
-          <p className="about">I am passionate about what I do, that is why my works always amaze people. It would be nice working with you too.</p>
+          <p className="about">I am an elegant programmer who uses Python and JavaScript to develop intelligent web apps, chatbots, automation APIs and each astounding software that my mind&mdash;or yours in fact&mdash;creates.</p>
         </div>
       </div>
 
@@ -83,7 +83,7 @@ function Menu() {
         <li><a href="https://github.com/michael-peter" target="_blank" rel="noreferrer"><SiGithub /></a></li>
         <li><a href="https://linkedin.com/in/peterhmichael" target="_blank" rel="noreferrer"><SiLinkedin /></a></li>
         <li><a href="https://twitter.com/PeterHMichael" target="_blank" rel="noreferrer"><SiTwitter /></a></li>
-        <li><a href="https://facebook.com/MichaelPeter.me" target="_blank" rel="noreferrer"><SiFacebook /></a></li>
+        <li><a href="https://instagram.com/peterhmichael_" target="_blank" rel="noreferrer"><SiInstagram /></a></li>
       </ul>
     </aside >
   )

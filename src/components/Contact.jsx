@@ -23,7 +23,7 @@ function Contact() {
 
     if (e.target.id === "mail") window.open(`mailto:michaelpeter.ai@gmail.com?subject=${encodeMessage.subject}&body=${encodeMessage.body}`)
 
-    if (e.target.id === "whatsapp") window.open(`https://wa.me/2348136020773?text=${encodeMessage.body}`)
+    if (e.target.id === "whatsapp") window.open(`https://wa.me/2348113811742?text=${encodeMessage.body}`)
   }
 
   return (

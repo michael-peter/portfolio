@@ -20,7 +20,8 @@
       border-radius: 10px;
       background: lightgray;
 
-      & h3, & p {
+      & h3,
+      & p {
         margin: 0;
         padding: 0;
       }
@@ -43,7 +44,7 @@
   }
 
   & .about-me-photo {
-    width: 43%;
+    width: 37%;
     margin-top: 20px;
 
     @media screen and (max-width: 769px) {
@@ -60,7 +61,6 @@
       @media screen and (max-width: 769px) {
         display: block;
         width: 50%;
-        
       }
     }
 
@@ -69,8 +69,8 @@
       font-size: 0.75em;
 
       @media screen and (max-width: 769px) {
-       width: 49%;
-       font-size: 1em;
+        width: 49%;
+        font-size: 1em;
       }
 
       & p {
@@ -79,8 +79,7 @@
       }
     }
   }
- }
-
+}
 
 & .talk-business {
   padding: 10px;
@@ -227,7 +226,7 @@
       &-flask {
         &::before {
           width: 72%;
-          background:yellow;
+          background: yellow;
         }
 
         &::after {
@@ -247,5 +246,4 @@
       }
     }
   }
-
 }

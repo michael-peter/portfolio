@@ -9,6 +9,9 @@ function About() {
         <Navigation />
         <div className="content">
           <h1>About me</h1><hr />
+          <div className="essay">
+            <p>I have written epistles all over the world but it feels difficult to write about myself. However, I designed a summary about me below and I hope you get thrilled. Also, I want you to know that I'm a wonderful person.</p><br/>
+          </div>
           <div className="about-container">
             <div className="about-me-texts">
               <div className="info-class">

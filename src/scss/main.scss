@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 
 * {
   box-sizing: border-box;
@@ -9,9 +9,15 @@
 body {
   margin: 0;
   padding: 0;
-  background: rgb(28, 28, 51);
+  background: rgb(28, 28, 51) url("/src/misc/idea.svg") no-repeat center;
+  background-blend-mode: overlay;
   color: white;
-  font-family: 'Averia Sans Libre', sans-serif;
+  font-family: "Averia Sans Libre", sans-serif;
+
+  @media screen and (max-width: 769px) {
+    background: rgb(28, 28, 51);
+    background-blend-mode: none;
+  }
 
   & .app {
     margin: 0;
@@ -22,8 +28,17 @@ body {
       padding: 0;
       display: flex;
       justify-content: space-between;
-  
-      & .main-section, .mern, .django, .dialogflow, .snatchbot, .python, .webcontent, .article, .about-page, .works {
+
+      & .main-section,
+      .mern,
+      .django,
+      .dialogflow,
+      .snatchbot,
+      .python,
+      .webcontent,
+      .article,
+      .about-page,
+      .works {
         width: 65%;
         height: 100vh;
         margin: 0;
@@ -31,26 +46,26 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-  
+
         & .propaganda {
           width: 80%;
           margin-left: 15%;
           margin-top: 3%;
           text-align: center;
-  
+
           & h1 {
             margin: 50px 0 30px;
             padding: 0;
             font-size: calc(10px + 5vw);
           }
-  
+
           & p {
             margin: 0;
             padding: 0;
             color: whitesmoke;
             font-size: calc(10px + 3vw);
           }
-  
+
           & .whatsapp-button {
             display: inline-block;
             margin: 30px auto;
@@ -72,7 +87,7 @@ body {
           }
         }
       }
-  
+
       & .menu {
         width: 34%;
         max-height: 100vh;
@@ -225,11 +240,9 @@ body {
           }
         }
       }
-
     }
-
   }
-  
+
   .fx {
     color: rgb(116, 190, 236);
   }
@@ -242,7 +255,7 @@ body {
     margin: 0;
     padding: 50px 20px 20px;
     background: rgb(28, 28, 51);
-    box-shadow: 0 20px 10px -15px black, ;
+    box-shadow: 0 20px 10px -15px black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -267,13 +280,13 @@ body {
 
       & > * {
         cursor: pointer;
-  
+
         &:hover {
-          color: black
+          color: black;
         }
       }
     }
-    
+
     & .share-container {
       position: fixed;
       top: 0;
@@ -296,7 +309,7 @@ body {
           text-align: center;
           display: flex;
           justify-content: space-between;
-          
+
           & svg {
             font-size: 1.25em;
           }
@@ -348,11 +361,19 @@ body {
       }
     }
   }
-  
-  .mern, .django, .dialogflow, .snatchbot, .python, .webcontent, .article, .about-page, .works {
+
+  .mern,
+  .django,
+  .dialogflow,
+  .snatchbot,
+  .python,
+  .webcontent,
+  .article,
+  .about-page,
+  .works {
     margin: 0;
     padding: 0;
-  
+
     & .container {
       position: relative;
       height: 100%;
@@ -362,9 +383,13 @@ body {
       margin-left: 20%;
 
       @keyframes scroll {
-        0% {margin-top: -100%;}
-    
-        100% {margin-top: 0;}
+        0% {
+          margin-top: -100%;
+        }
+
+        100% {
+          margin-top: 0;
+        }
       }
 
       & .content {
@@ -389,17 +414,17 @@ body {
           color: darkred;
         }
 
-        @import 'mern.scss';
-        @import 'contact.scss';
-        @import 'about.scss';
-        @import 'works.scss';
+        @import "mern.scss";
+        @import "contact.scss";
+        @import "about.scss";
+        @import "works.scss";
       }
     }
   }
 }
 
 @media screen and (max-width: 769px) {
-  @import 'mobile.scss';
+  @import "mobile.scss";
 }
 
 ::-webkit-scrollbar {

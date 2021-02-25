@@ -24,7 +24,7 @@ function Navigation() {
       <BiLeftArrow className="back-arrow" onClick={() => dispatch({ type: 'SET_MAIN' })} />
 
       <div className="actions">
-        <BsChat onClick={() => window.open("https://wa.me/2348136020773")} title="Talk about this on WhatsApp" />
+        <BsChat onClick={() => window.open("https://wa.me/2348113811742")} title="Talk about this on WhatsApp" />
         <AiOutlineMail onClick={() => window.open(mailURI)} title="Send me a mail about this" />
         <ImShare2 onClick={() => setShare(true)} title="Tell your friends about me" />
         <Share share={share} setShare={setShare} />

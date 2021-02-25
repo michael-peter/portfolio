@@ -7,16 +7,13 @@ function Share({ share, setShare }) {
 
   const { mobile } = useContext(ViewContext)
 
-  const message = encodeURI(`Hi!!! I just found you the best developer 😍... Michael codes like your website is wonderland and he even builds robots to help your clients too ❤️
+  const message = encodeURI(`Hello! Meet Michael, an elegant programmer who uses Python and Javascript to develop web apps, chatbots, automation APIs and each astounding software that his mind, or yours in fact, creates!
   
-  Chat with him: https://wa.me/2348136020773
-
+  View his portfolio at https://michael-peter.github.io
+  or chat with him directly via https://wa.me/2348113811742
   `)
 
-  const twitterMessage = encodeURI(`Hi!!! I just found you the best developer 😍... @PeterHMichael codes like your website is wonderland and he even builds robots to help your clients too ❤️
-
-
-
+  const twitterMessage = encodeURI(`Meet Michael, @PeterHMichael, an elegant programmer who uses Python and Javascript to develop web apps, chatbots, automation APIs and each astounding software that his mind, or yours in fact, creates! 😍❤️
 `)
 
   const links = {
@@ -26,10 +23,7 @@ function Share({ share, setShare }) {
 
     facebook: `https://facebook.com/sharer.php?u=https://michael-peter.github.io`,
 
-    whatsapp: `https://api.whatsapp.com/send?text=${message}
-
-View his profile: https://michael-peter.github.io
-`
+    whatsapp: `https://api.whatsapp.com/send?text=${message}`
   }
 
   return (

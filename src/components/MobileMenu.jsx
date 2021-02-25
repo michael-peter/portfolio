@@ -2,7 +2,7 @@ import { useState, useContext } from 'react'
 import { ViewContext } from '../ViewContext'
 import { FcAbout, FcGoogle } from 'react-icons/fc'
 import { FaNetworkWired, FaReact, FaRobot, FaPython } from 'react-icons/fa'
-import { SiDjango, SiGithub, SiLinkedin, SiTwitter, SiFacebook } from 'react-icons/si'
+import { SiDjango, SiGithub, SiLinkedin, SiTwitter, SiInstagram } from 'react-icons/si'
 import { ImPen, ImPencil } from 'react-icons/im'
 import michaelAvatar from '../misc/michael-peter.png'
 import picture from '../misc/michael-peter.jpg'
@@ -57,8 +57,8 @@ function MobileMenu() {
             <div className="top-section" onTouchMove={() => setMenu(!menu)}>
               <img onClick={() => (zoom === '') ? setZoom('zoom') : setZoom('')} src={picture} alt="" className={`picture ${zoom}`} />
               <div className="bio">
-                <p className="name"><strong>Michael Peter</strong></p>
-                <p className="about">I am passionate about what I do, that is why my works always amaze people. It would be nice working with you too.</p>
+                {/* <p className="name"><strong>Michael Peter</strong></p> */}
+                <p className="about">I am an elegant programmer who uses Python and JavaScript to develop intelligent web apps, chatbots, automation APIs and each astounding software that my mind—or yours in fact—creates.</p>
               </div>
             </div>
 
@@ -66,12 +66,12 @@ function MobileMenu() {
               <li><a href="https://github.com/michael-peter" target="_blank" rel="noreferrer"><SiGithub /></a></li>
               <li><a href="https://linkedin.com/in/peterhmichael" target="_blank" rel="noreferrer"><SiLinkedin /></a></li>
               <li><a href="https://twitter.com/PeterHMichael" target="_blank" rel="noreferrer"><SiTwitter /></a></li>
-              <li><a href="https://facebook.com/MichaelPeter.me" target="_blank" rel="noreferrer"><SiFacebook /></a></li>
+              <li><a href="https://instagram.com/peterhmichael_" target="_blank" rel="noreferrer"><SiInstagram /></a></li>
             </ul>
           </>
           :
           <div className="menu-button">
-            <img src={michaelAvatar} alt="" />
+            <img src={michaelAvatar} alt="" onClick={() => setMenu(!menu)}/>
             <RiMenuFoldFill onClick={() => setMenu(!menu)} />
           </div>
         }
@@ -80,8 +80,8 @@ function MobileMenu() {
         <div className="bottom-section">
           <div className="menu-list">
             <div>
-              <div id="iabout" className={`iabout ${(name === "about") ? "active" : ""}`} onClick={onClickHandler}><FcAbout /><em>{menu ? "About me" : ""}</em></div>
-              <div id="iworks" className={`iworks ${(name === "works") ? "active" : ""}`} onClick={onClickHandler}><FaNetworkWired /><em>{menu ? "My works" : ""}</em></div>
+              <div id="iabout" className={`iabout ${(name === "about") ? "active" : ""}`} onClick={onClickHandler}><FcAbout /><em>{menu ? " About me" : ""}</em></div>
+              <div id="iworks" className={`iworks ${(name === "works") ? "active" : ""}`} onClick={onClickHandler}><FaNetworkWired /><em>{menu ? " My works" : ""}</em></div>
             </div>
 
             <div>
